@@ -10,10 +10,10 @@ int _printf(const char *format, ...)
 	int i, j = 0, a = 0, *index = &a;
 	va_list valist;
 	vtype_t spec[] = {
-		{'c', format_C}, {'d', format_D}, {'s', format_S}, {'i', format_I},
-		{'u', format_U}, {'%', format_PERC}, {'x', format_H}, {'X', format_CH},
-		{'o', format_O}, {'b', format_B}, {'p', format_P}, {'r', format_y},
-		{'R', format_Y}, {'\0', NULL}
+		{'c', format_c}, {'d', format_d}, {'s', format_s}, {'i', format_d},
+		{'u', format_u}, {'%', format_perc}, {'x', format_h}, {'X', format_ch},
+		{'o', format_o}, {'b', format_b}, {'p', format_p}, {'r', format_r},
+		{'R', format_R}, {'\0', NULL}
 	};
 	if (!format)
 		return (-1);
