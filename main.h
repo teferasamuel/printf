@@ -29,4 +29,18 @@ void format_s(va_list valist, char *buffer, int *index);
 void format_c(va_list valist, char *buffer, int *index);
 void format_d(va_list valist, char *buffer, int *index);
 void _write_buffer(char *buffer, int *index);
+char *tostring(char str[], int num);
+int num_len(int num);
+char *itos(char str[], long int num);
+char *utos(char str[], int num);
+int num_len(int num);
+int float_len(double f);
+int _strlen(char *s);
+char *_memcpy(char *dest, char *src, unsigned int n);
+void print_char(va_list valist);
+void print_int(va_list valist);
+void print_float(va_list valist);
+void print_string(va_list valist);
+void *rot13(char *s);
+void rev_string(char *s);
 #endif
